@@ -24,13 +24,16 @@
         text-decoration: none   
 .menu
     position: fixed
+    z-index: 0
     top: 80px
     left: 0
     width: 100%
     padding: 16px 0
     background-color: $primary
     transition: 0.2s
-    transform: translateY() 
+    transform: translateY(-200%) 
+    &_active
+        transform: translateY()
     &__nav
         display: flex
         align-items: center
@@ -53,7 +56,7 @@
             display: block
             width: 20px
             height: 3px
-            background-color: #802F19
+            background-color: #08a471
             margin: 2px 0
 .logo
     &__text
@@ -66,3 +69,20 @@
         display: block
         font-size: 15px
         color: $text-color-light  
+
+@media  ( max-width:991px )
+    .navbar
+       &__mobile, &__landline
+           display: none 
+@media  ( max-width:576px )
+    .logo
+        display: none
+    .menu
+        top: 60px
+        transform: translateY(0)
+        &-button
+          height: 60px
+        &__nav
+          flex-direction: column
+
+                

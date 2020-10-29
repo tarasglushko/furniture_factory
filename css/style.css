@@ -8,6 +8,25 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
 @font-face {
   font-family: 'Proxima Nova Light';
   src: url("../fonts/ProximaNova-Light.eot");
@@ -66,13 +85,19 @@
 
 .menu {
   position: fixed;
+  z-index: 0;
   top: 80px;
   left: 0;
   width: 100%;
   padding: 16px 0;
-  background-color: #802F19;
+  background-color: #08a471;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+}
+
+.menu_active {
   -webkit-transform: translateY();
           transform: translateY();
 }
@@ -119,7 +144,7 @@
   display: block;
   width: 20px;
   height: 3px;
-  background-color: #802F19;
+  background-color: #08a471;
   margin: 2px 0;
 }
 
@@ -137,14 +162,40 @@
   color: #bab5b5;
 }
 
+@media (max-width: 991px) {
+  .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+  .menu {
+    top: 60px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .menu-button {
+    height: 60px;
+  }
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body {
   font-family: 'Proxima Nova Light',sans-serif;
   color: #262626;
 }
 
 .button-o {
-  color: #802F19;
-  border: 3px solid #802F19;
+  color: #08a471;
+  border: 3px solid #08a471;
   padding: 17px 22px;
   font-size: 14px;
   text-transform: uppercase;
@@ -163,6 +214,13 @@ body {
   background: linear-gradient(180deg, #08a471 15%, #fdfb2d 95%);
   color: #ffffff;
   font-family: 'Proxima Nova Semibold',sans-serif;
+}
+
+@media (max-width: 576px) {
+  .button-o {
+    font-size: 10px;
+    width: 100%;
+  }
 }
 
 .hero {
