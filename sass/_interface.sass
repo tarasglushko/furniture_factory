@@ -1,7 +1,11 @@
 body
     +light
     color: $text-color
-
+.section
+    &-tittle
+        font-size: 40px
+        +bold
+        text-align: center
 .button-o
     color: $primary
     border: 3px solid $primary
@@ -20,6 +24,19 @@ body
     background: linear-gradient(180deg, rgba(8,164,113,1) 15%, rgba(253,251,45,1) 95%)
     color: #ffffff
     +bold  
+.button-s
+    border: none 
+    height: 80px
+    padding: 25px 45px
+    text-transform: uppercase
+    background: rgb(8,164,113)
+    background: linear-gradient(180deg, rgba(8,164,113,1) 15%, rgba(253,251,45,1) 95%)
+    color: #ffffff
+    +bold  
+.input
+    height: 80px
+    padding-left: 30px
+    border: 1px solid #e3f707     
 @media  ( max-width:576px )
     .button-o
         font-size: 10px
