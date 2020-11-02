@@ -11,7 +11,7 @@
     font-family: 'Proxima Nova Semibold';
     src: url('../fonts/ProximaNova-Semibold.eot');
     src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+    url('../fonts/ProximaNova-Semibold.woff') format('woff'),
     url('../fonts/') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -24,3 +24,4 @@
 @mixin bold {
     font-family: 'Proxima Nova Semibold',sans-serif;
 }
+
