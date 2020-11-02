@@ -217,6 +217,7 @@ img {
 }
 
 .button {
+  text-decoration: none;
   border: none;
   border-radius: 50px 50px 50px 50px;
   padding: 25px 45px;
@@ -226,6 +227,7 @@ img {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #08a471), color-stop(95%, #fdfb2d));
   background: linear-gradient(180deg, #08a471 15%, #fdfb2d 95%);
   color: #ffffff;
+  font-family: 'Proxima Nova Semibold',sans-serif;
 }
 
 .button-add {
@@ -445,6 +447,11 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.catalog__link {
+  text-align: center;
+  margin-top: 60px;
 }
 
 @media (max-width: 991px) {
