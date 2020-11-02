@@ -4,6 +4,7 @@
     top: 0
     width: 100%
     background-color: #ffffff
+    z-index: 99
     &-wrap
         display: flex
         align-items: center
@@ -24,17 +25,17 @@
         text-decoration: none   
 .menu
     position: fixed
-    z-index: 0
+    z-index: 1
     top: 80px
     left: 0
     width: 100%
     padding: 16px 0
     background-color: $primary
     transition: 0.2s
-    transform: translateY(-200%) 
-    opacity: 0
+    transform: translateY(0%) 
+    opacity: 1
     &_active
-        transform: translateY()
+        transform: translateY(100%)
         opacity: 1
     &__nav
         display: flex
@@ -56,10 +57,10 @@
         width: 70px
         &__line
             display: block
-            width: 20px
-            height: 3px
+            width: 40px
+            height: 5px
             background-color: #08a471
-            margin: 2px 0
+            margin: 3px 0
 .logo
     &__text
         display: block
@@ -74,7 +75,7 @@
 
 @media  ( max-width:991px )
     .navbar
-       &__mobile, &__landline
+        &__mobile, &__landline
            display: none 
 @media  ( max-width:576px )
     .logo

@@ -1,5 +1,4 @@
 .features
-    margin-top: -100px
     &-block
         display: flex
         justify-content: space-between
@@ -10,10 +9,13 @@
             flex-basis: 33%
             text-align: center
             font-size: 22px
-            +bold 
-@media  ( max-width: 768px )
+            +bold
+@media  ( max-width: 576px )
     .features
+        align-items: center
         &-block
-            align-items: center
-            flex-basis: 100%
+            justify-content: center
+            flex-direction: column
+            
+            
     
