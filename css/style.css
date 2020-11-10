@@ -182,13 +182,8 @@
   .logo {
     display: none;
   }
-  .menu {
-    top: 60px;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
   .menu-button {
-    height: 60px;
+    height: 80px;
   }
   .menu__nav {
     -webkit-box-orient: vertical;
