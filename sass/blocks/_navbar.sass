@@ -25,17 +25,16 @@
         text-decoration: none   
 .menu
     position: fixed
-    z-index: 1
+    z-index: 99
     top: 80px
     left: 0
     width: 100%
     padding: 16px 0
     background-color: $primary
-    transition: 0.2s
-    transform: translateY(-200%) 
-    opacity: 1
+    transition: 0.4s
+    transform: translateY(-400%) 
     &_active
-        transform: translateY(100%)
+        transform: translateY(0)
         opacity: 1
     &__nav
         display: flex
@@ -55,6 +54,10 @@
         border: none
         height: 80px
         width: 70px
+        &:hover
+            cursor: pointer
+        &:focus
+            outline: none
         &__line
             display: block
             width: 40px

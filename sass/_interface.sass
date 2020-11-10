@@ -18,6 +18,10 @@ img
     text-transform: uppercase
     background-color: #fff
     +bold 
+    &:hover
+            cursor: pointer
+    &:focus
+            outline: none
 .button
     text-decoration: none
     border: none 
@@ -29,6 +33,10 @@ img
     background: linear-gradient(180deg, rgba(8,164,113,1) 15%, rgba(253,251,45,1) 95%)
     color: #ffffff 
     +bold
+    &:hover
+            cursor: pointer
+    &:focus
+            outline: none
     &-add
         padding: 6px
         width: 125px
@@ -37,11 +45,19 @@ img
         background-color: #f77b07
         border: none
         +bold
+        &:hover
+            cursor: pointer
+        &:focus
+            outline: none
     &-like
         background-color: $primary
         width: 35px
         padding: 2px
         border: none
+        &:hover
+            cursor: pointer
+        &:focus
+            outline: none
 .button-s
     border: none 
     height: 80px
@@ -51,10 +67,16 @@ img
     background: linear-gradient(180deg, rgba(8,164,113,1) 15%, rgba(253,251,45,1) 95%)
     color: #ffffff
     +bold  
+    &:hover
+            cursor: pointer
+    &:focus
+            outline: none
 .input
     height: 80px
     padding-left: 30px
-    border: 1px solid #e3f707     
+    border: 1px solid #e3f707    
+    &:focus
+            outline: none 
 @media  ( max-width:576px )
     .button-o
         font-size: 10px

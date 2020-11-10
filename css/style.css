@@ -86,22 +86,21 @@
 
 .menu {
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   top: 80px;
   left: 0;
   width: 100%;
   padding: 16px 0;
   background-color: #125230;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-transform: translateY(-200%);
-          transform: translateY(-200%);
-  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateY(-400%);
+          transform: translateY(-400%);
 }
 
 .menu_active {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   opacity: 1;
 }
 
@@ -141,6 +140,14 @@
   border: none;
   height: 80px;
   width: 70px;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+.menu-button:focus {
+  outline: none;
 }
 
 .menu-button__line {
@@ -218,6 +225,14 @@ img {
   font-family: 'Proxima Nova Semibold',sans-serif;
 }
 
+.button-o:hover {
+  cursor: pointer;
+}
+
+.button-o:focus {
+  outline: none;
+}
+
 .button {
   text-decoration: none;
   border: none;
@@ -232,6 +247,14 @@ img {
   font-family: 'Proxima Nova Semibold',sans-serif;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
 .button-add {
   padding: 6px;
   width: 125px;
@@ -242,11 +265,27 @@ img {
   font-family: 'Proxima Nova Semibold',sans-serif;
 }
 
+.button-add:hover {
+  cursor: pointer;
+}
+
+.button-add:focus {
+  outline: none;
+}
+
 .button-like {
   background-color: #125230;
   width: 35px;
   padding: 2px;
   border: none;
+}
+
+.button-like:hover {
+  cursor: pointer;
+}
+
+.button-like:focus {
+  outline: none;
 }
 
 .button-s {
@@ -261,10 +300,22 @@ img {
   font-family: 'Proxima Nova Semibold',sans-serif;
 }
 
+.button-s:hover {
+  cursor: pointer;
+}
+
+.button-s:focus {
+  outline: none;
+}
+
 .input {
   height: 80px;
   padding-left: 30px;
   border: 1px solid #e3f707;
+}
+
+.input:focus {
+  outline: none;
 }
 
 @media (max-width: 576px) {
@@ -417,6 +468,13 @@ img {
   position: relative;
   -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
           box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+}
+
+.catalog-card:hover .catalog-card__buttons {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .catalog-card__buttons {
@@ -426,6 +484,11 @@ img {
   position: absolute;
   bottom: 0;
   right: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 .catalog-card__button {
@@ -471,8 +534,8 @@ img {
 }
 
 .gallery {
-  background-color: #f6f7f9;
   padding-bottom: 20px;
+  z-index: -1;
 }
 
 .factory-block {
