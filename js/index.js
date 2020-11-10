@@ -5,7 +5,7 @@ $(document).ready(function(){
         responsive:{
             0:{
                 items:1,
-                nav:true
+                nav:false
             },
             600:{
                 items:3,
@@ -18,7 +18,7 @@ $(document).ready(function(){
     $(function(){
             $("a[href^='#']").click(function(){
                     var _href = $(this).attr("href");
-                    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                    $("html, body").animate({scrollTop: $(_href).offset().top -130 +"px"});
                     return false;
             });
     });
