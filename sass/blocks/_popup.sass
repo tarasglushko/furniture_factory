@@ -1,0 +1,43 @@
+.popup
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    z-index: 9
+    background-color: rgba(0,0,0,0.5)
+    &-content
+        position: fixed
+        left: 50%
+        top: 15%
+        background-color: #ffffff
+        transform: translateX(-50%)
+        padding: 4rem 6rem
+    &-close
+        position: absolute
+        top: -1.1rem
+        right: -2rem
+        width: 2rem
+        text-align: center
+        border: none
+        background-color: transparent
+        font-size: 3rem
+        color: #ffffff
+        &:focus
+            outline: none
+    &-content
+        text-align: center
+        font-size: 17px
+    &-header
+        font-size: 20px
+        +bold 
+    &-form
+        display: flex
+        justify-content: center
+        align-items: center
+            
+
+        

@@ -305,19 +305,63 @@ img {
   outline: none;
 }
 
+.button-g {
+  margin-bottom: 5px;
+  border: none;
+  height: 80px;
+  padding: 25px 45px;
+  text-transform: uppercase;
+  background-color: #ff9a03;
+  color: #ffffff;
+  border-radius: 10px;
+  font-family: 'Proxima Nova Semibold',sans-serif;
+}
+
+.button-g:hover {
+  cursor: pointer;
+}
+
+.button-g:focus {
+  outline: none;
+}
+
 .input {
   height: 80px;
   padding-left: 30px;
-  border: 1px solid #e3f707;
+  border: 1px solid #e0fa34;
 }
 
 .input:focus {
   outline: none;
 }
 
+.input-g {
+  margin-bottom: 5px;
+  height: 70px;
+  padding-left: 30px;
+  border: 2px solid #f6a80b;
+  border-radius: 10px;
+}
+
+.input-g:focus {
+  outline: none;
+}
+
+.input-s {
+  margin-bottom: 5px;
+  height: 120px;
+  padding-left: 30px;
+  border: 2px solid #f6a80b;
+  border-radius: 10px;
+}
+
+.input-s:focus {
+  outline: none;
+}
+
 @media (max-width: 576px) {
   .button-o {
-    font-size: 10px;
+    font-size: 5px;
     width: 100%;
   }
 }
@@ -721,5 +765,66 @@ img {
     margin-top: 30px;
     text-align: center;
   }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  position: fixed;
+  left: 50%;
+  top: 15%;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 4rem 6rem;
+}
+
+.popup-close {
+  position: absolute;
+  top: -1.1rem;
+  right: -2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.popup-close:focus {
+  outline: none;
+}
+
+.popup-content {
+  text-align: center;
+  font-size: 17px;
+}
+
+.popup-header {
+  font-size: 20px;
+  font-family: 'Proxima Nova Semibold',sans-serif;
+}
+
+.popup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
