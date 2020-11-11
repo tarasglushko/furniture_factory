@@ -183,7 +183,8 @@
     display: none;
   }
   .menu-button {
-    height: 80px;
+    height: 70px;
+    margin: auto;
   }
   .menu__nav {
     -webkit-box-orient: vertical;
@@ -192,6 +193,9 @@
             flex-direction: column;
     height: 70px;
     font-family: 'Proxima Nova Light',sans-serif;
+  }
+  .navbar {
+    height: 80px;
   }
 }
 
@@ -361,7 +365,7 @@ img {
 
 @media (max-width: 576px) {
   .button-o {
-    font-size: 17px;
+    font-size: 15px;
     width: 100%;
     font-family: 'Proxima Nova Semibold',sans-serif;
   }
@@ -789,6 +793,8 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding: 4rem 6rem;
+  text-align: center;
+  font-size: 17px;
 }
 
 .popup-close {
@@ -807,11 +813,6 @@ img {
   outline: none;
 }
 
-.popup-content {
-  text-align: center;
-  font-size: 17px;
-}
-
 .popup-header {
   font-size: 20px;
   font-family: 'Proxima Nova Semibold',sans-serif;
@@ -827,5 +828,16 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 576px) {
+  .popup-content {
+    width: 80%;
+    text-align: center;
+    font-family: 'Proxima Nova Semibold',sans-serif;
+  }
+  .popup-header {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,6 +16,8 @@
         background-color: #ffffff
         transform: translateX(-50%)
         padding: 4rem 6rem
+        text-align: center
+        font-size: 17px
     &-close
         position: absolute
         top: -1.1rem
@@ -28,9 +30,6 @@
         color: #ffffff
         &:focus
             outline: none
-    &-content
-        text-align: center
-        font-size: 17px
     &-header
         font-size: 20px
         +bold 
@@ -38,6 +37,15 @@
         display: flex
         justify-content: center
         align-items: center
+
+@media  ( max-width:576px )
+    .popup
+        &-content
+            width: 80%
+            text-align: center
+            +bold 
+        &-header
+            display: none
             
 
         
