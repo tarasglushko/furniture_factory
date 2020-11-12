@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>furniture_factory</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -62,7 +64,7 @@
 </header>
 <!-- /.header -->
 <main>
-    <section class="offer wow fadeInRight">
+    <section class="offer">
         <div class="container">
             <div class="offer__block offer-block">
                 <h2 class="offer__tittle">Оставьте заявку на расчет</h2>
@@ -264,15 +266,15 @@
             <h2 class="popup-header">Заинтересовало?</h2>
             <p>Оставьте свои контактные данные<br>для связи</p>
             <div class="popup-form">
-                <form action="#">
+                <form action="mail.php" method="POST">
                     <div class="popup__group">
-                        <input type="text" class="form__input input-g" placeholder="Ваше имя">
+                        <input name="user_name" type="text" class="form__input input-g" placeholder="Ваше имя">
                     </div>
                     <div class="popup__group">
-                        <input id="phone" type="tel" class="form__input input-g" placeholder="Ваш телефон">
+                        <input name="user_phone" id="phone" type="tel" class="form__input input-g" placeholder="Ваш телефон">
                     </div>
                     <div class="popup__group">
-                        <input type="text" class="form__input input-s" placeholder="Ваше сообщение">
+                        <input name="user_text" type="text" class="form__input input-s" placeholder="Ваше сообщение">
                     </div>
                     <div class="popup__group">
                         <input type="submit" class=button-g value="Оставьте заявку">
