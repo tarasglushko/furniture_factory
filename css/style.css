@@ -86,7 +86,7 @@
 
 .menu {
   position: fixed;
-  z-index: 99;
+  z-index: 9;
   top: 80px;
   left: 0;
   width: 100%;
@@ -833,7 +833,9 @@ img {
 @media (max-width: 576px) {
   .popup-content {
     width: 80%;
+    padding: 3rem 3rem;
     text-align: center;
+    z-index: 99;
     font-family: 'Proxima Nova Semibold',sans-serif;
   }
   .popup-header {
