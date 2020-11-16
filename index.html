@@ -267,14 +267,19 @@
             <p>Оставьте свои контактные данные<br>для связи</p>
             <div class="popup-form">
                 <form action="mail.php" method="POST">
+                    		       <!-- Hidden Required Fields -->
+		       <input type="hidden" name="project_name" value="Furniture-factory">
+		       <input type="hidden" name="admin_email" value="taras.glushck@yandex.ru">
+		       <input type="hidden" name="form_subject" value="Заявка с формы">
+		                           <!-- END Hidden Required Fields -->
                     <div class="popup__group">
-                        <input name="user_name" type="text" class="form__input input-g" placeholder="Ваше имя">
+                        <input type="text" name="Name" class="form__input input-g" placeholder="Ваше имя">
                     </div>
                     <div class="popup__group">
-                        <input name="user_phone" id="phone" type="tel" class="form__input input-g" placeholder="Ваш телефон">
+                        <input name="Phone" id="phone" type="tel" class="form__input input-g" placeholder="Ваш телефон">
                     </div>
                     <div class="popup__group">
-                        <input name="user_text" type="text" class="form__input input-s" placeholder="Ваше сообщение">
+                        <input name="Message" type="text" class="form__input input-s" placeholder="Ваше сообщение">
                     </div>
                     <div class="popup__group">
                         <input type="submit" class=button-g value="Оставьте заявку">
